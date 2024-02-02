@@ -1,14 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import {
-  StyleSheet,
-  TextInput,
-  View,
-  TouchableOpacity,
-} from 'react-native';
+import React from "react";
+import PropTypes from "prop-types";
+import { StyleSheet, TextInput, View, TouchableOpacity } from "react-native";
 
-
-const Input = ({ placeholder, value, onChangeText, secureTextEntry, style, rightIcon }) => {
+const Input = ({
+  placeholder,
+  value,
+  onChangeText,
+  secureTextEntry,
+  style,
+  rightIcon,
+}) => {
   return (
     <View style={styles.container}>
       <TextInput
@@ -19,7 +20,10 @@ const Input = ({ placeholder, value, onChangeText, secureTextEntry, style, right
         secureTextEntry={secureTextEntry}
       />
       {rightIcon && (
-        <TouchableOpacity onPress={rightIcon.onPress} style={styles.iconContainer}>
+        <TouchableOpacity
+          onPress={rightIcon.onPress}
+          style={styles.iconContainer}
+        >
           {rightIcon.icon}
         </TouchableOpacity>
       )}
@@ -51,13 +55,13 @@ const styles = StyleSheet.create({
   },
   input: {
     borderWidth: 1,
-    borderColor: '#AE7B95',
+    borderColor: "#B4839C",
     borderRadius: 5,
     padding: 10,
     width: 310,
   },
   iconContainer: {
     marginLeft: 280,
-    marginTop:-29,
+    marginTop: -29,
   },
 });
