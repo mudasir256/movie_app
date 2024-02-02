@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, Keyboard, Alert, TouchableWithoutFeedback } from "react-native";
+import { StyleSheet, View, Keyboard, Alert, TouchableWithoutFeedback } from "react-native";
 import { useDispatch } from "react-redux";
 import { StatusBar } from "expo-status-bar";
 import Input from "../../../app/components/Input";
