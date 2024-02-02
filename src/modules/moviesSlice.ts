@@ -8,6 +8,7 @@ const initialState: FavoritesState = {
   movies: [],
 };
 
+
 const moviesSlice = createSlice({
   name: "favorites",
   initialState,
